@@ -1,0 +1,23 @@
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: apbackend-ingress
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+    ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/add-base-url: /
+spec:
+  rules:
+  - host: test.jackfay.us
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: apbackend-service
+          servicePort: 80
+  tls:
+  - hosts:
+    - test.jackfay.us
+    secretName: supersecret

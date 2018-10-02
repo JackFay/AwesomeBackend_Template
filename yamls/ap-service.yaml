@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apbackend-service
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8085
+  - name: https
+    port: 443
+    targetPort: 8085
+  selector:
+    app: apbackend
+  type: NodePort

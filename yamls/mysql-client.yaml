@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mysql-client
+spec:
+  selector:
+    matchLabels:
+      app: mysql-client
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mysql-client
+    spec:
+      containers:
+      - image: mysql:5.6
+        name: mysql-client
+        env:
+          # Use secret in real usage
+        - name: MYSQL_ROOT_PASSWORD
+          value: password

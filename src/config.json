@@ -1,0 +1,20 @@
+{
+  "port": 443,
+  "bodyLimit": "100kb",
+  "corsHeaders": ["Link"],
+  "database": {
+    "devHost": "146.148.104.50",
+    "prodHost": "10.11.255.240",
+    "user": "root",
+    "password": "password",
+    "name": "awesome_project_dev"
+  },
+  "jwtSecret": "ilovescotchyscotch",
+  "mongo": {
+    "devHost": "mongodb://162.222.181.36:27017/awesome_project_dev",
+    "prodHost": "10.11.247.115",
+    "user": "root",
+    "password": "password",
+    "name": "awesome_project_dev"
+  }
+}
