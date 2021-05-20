@@ -29,7 +29,7 @@
   "repository": "JackFay/AwesomeProjectBackend",
   "author": "Jack Fay",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.13.3",
     "coinbase-commerce-node": "^1.0.4",
     "coinbase-pro": "^0.9.0",
