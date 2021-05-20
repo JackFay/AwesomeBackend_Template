@@ -1,20 +1,30 @@
 {
   "port": 443,
-  "bodyLimit": "100kb",
+  "bodyLimit": "50mb",
   "corsHeaders": ["Link"],
-  "database": {
-    "devHost": "146.148.104.50",
-    "prodHost": "10.11.255.240",
-    "user": "root",
-    "password": "password",
-    "name": "awesome_project_dev"
-  },
   "jwtSecret": "ilovescotchyscotch",
+  "coinbaseSharedSecret": "b12346d5-8186-44c2-99e4-128a340be89a",
   "mongo": {
-    "devHost": "mongodb://162.222.181.36:27017/awesome_project_dev",
-    "prodHost": "10.11.247.115",
+    "devHost": "mongodb://root:dinerosuerte@35.224.108.10:27017",
+    "prodHost": "10.19.250.88",
     "user": "root",
-    "password": "password",
-    "name": "awesome_project_dev"
+    "password": "dinerosuerte",
+    "name": "menus"
+  },
+  "mysql": {
+    "devHost": "127.0.0.1",
+    "user": "root",
+    "password": "admin",
+    "database": "integrater",
+    "prod": "10.111.160.3",
+    "produser": "root",
+    "prodpassword": "5DuApnJe48dIHzqy"
+  },
+  "sendgrid": {
+    "devApiKey": "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"
+  },
+  "twilio": {
+    "sid": "AC4272e53d6c95b6ca6665bd2aa5ef8cc1",
+    "authToken": "400a9831802ebde5395ef08ebbf720b3"
   }
 }

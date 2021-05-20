@@ -5,6 +5,7 @@
   "main": "dist",
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "scratchpad": "nodemon -w . --exec \"babel-node --presets es2015 ./src/SqlScratchPad.js\"",
     "build": "babel src -s -D -d dev --presets es2015,stage-0",
     "build-prod": "babel src -s -D -d dist --presets es2015,stage-0",
     "start": "node dist",
@@ -30,6 +31,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.13.3",
+    "coinbase-commerce-node": "^1.0.4",
+    "coinbase-pro": "^0.9.0",
     "compression": "^1.5.2",
     "cors": "^2.7.1",
     "cors-anywhere": "^0.4.0",
@@ -44,8 +47,10 @@
     "multer": "^1.3.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
+    "nodemailer": "^6.5.0",
     "promise-mysql": "^3.2.1",
     "resource-router-middleware": "^0.6.0",
+    "twilio": "^3.57.0",
     "ws": "^4.0.0"
   },
   "devDependencies": {
